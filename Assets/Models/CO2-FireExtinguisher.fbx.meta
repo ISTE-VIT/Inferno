@@ -1,49 +1,9 @@
 fileFormatVersion: 2
-guid: 96bf50dae798dd0499491b22c7463cad
+guid: ae5ed16cbb6b78548921698e36a1a6b0
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.004
-    second: {fileID: 2100000, guid: b30c3f5bdf6d31a408131ad77f1d0230, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.005
-    second: {fileID: 2100000, guid: 97241000438d7fb47b4c8809e4355308, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.006
-    second: {fileID: 2100000, guid: bf18ff9b825bf364e91e63e86a18796c, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: FireExtiguisher_Material_Albedo
-    second: {fileID: 2800000, guid: 5121456b7a7e0e2458ec6af7ee712ea8, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: FireExtiguisher_Material_Metallic
-    second: {fileID: 2800000, guid: c5785da0d25e2df41b94166785b54102, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: FireExtiguisher_Material_Normal
-    second: {fileID: 2800000, guid: 29572c3cfe74b824c853afa098730fbd, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: FireExtiguisher_Material_Roughness
-    second: {fileID: 2800000, guid: 5070a256b534cb0429e3c0573a015859, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: FireExtinguisher_Metallic
-    second: {fileID: 2800000, guid: fefdc035adefeb248803d435e8df4bcb, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
