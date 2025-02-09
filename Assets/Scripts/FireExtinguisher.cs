@@ -11,9 +11,11 @@ public class FireExtinguisher : MonoBehaviour
 
     [Header("Fire Suppression System")]
     public ParticleSystem fireSuppressant;
-    public AudioSource sprayAudio; // Audio source for spray sound
     public InputActionReference triggerAction;
     public float maxSprayDuration = 10f;
+    
+    [Header("Audio")]
+    public AudioSource sprayAudio; // Add this in Unity and assign an extinguisher spray sound.
 
     [Header("Pin Mechanics")]
     public bool isPinPulled = false;
@@ -26,40 +28,19 @@ public class FireExtinguisher : MonoBehaviour
 
     private void Start()
     {
-        if (fireSuppressant != null)
-        {
-            fireSuppressant.Stop();
-        }
-        else
-        {
-            Debug.LogError("Particle system (fireSuppressant) is not assigned!");
-        }
+        if (fireSuppressant != null) fireSuppressant.Stop();
+        else Debug.LogError("Particle system (fireSuppressant) is not assigned!");
 
-        if (sprayAudio != null)
-        {
-            sprayAudio.Stop();
-        }
-        else
-        {
-            Debug.LogError("Spray audio source is not assigned!");
-        }
+        if (sprayAudio == null) Debug.LogError("AudioSource (sprayAudio) is not assigned!");
 
-        if (triggerAction != null)
-        {
-            triggerAction.action.Enable();
-        }
-        else
-        {
-            Debug.LogError("Trigger Action is not assigned!");
-        }
+        if (triggerAction != null) triggerAction.action.Enable();
+        else Debug.LogError("Trigger Action is not assigned!");
 
         if (pinObject != null)
         {
             pinRigidbody = pinObject.GetComponent<Rigidbody>();
-            if (pinRigidbody != null)
-            {
-                pinRigidbody.isKinematic = true;
-            }
+            if (pinRigidbody != null) pinRigidbody.isKinematic = true;
+            else Debug.LogError("Pin object is missing a Rigidbody component!");
             initialPinPosition = pinObject.transform.position;
             pinObject.selectEntered.AddListener(OnPinGrabbed);
             pinObject.selectExited.AddListener(OnPinReleased);
@@ -70,6 +51,7 @@ public class FireExtinguisher : MonoBehaviour
             extinguisher.selectEntered.AddListener(OnExtinguisherGrabbed);
             extinguisher.selectExited.AddListener(OnExtinguisherReleased);
         }
+        else Debug.LogError("Extinguisher XRGrabInteractable is not assigned!");
     }
 
     private void Update()
@@ -89,38 +71,32 @@ public class FireExtinguisher : MonoBehaviour
                 if (!isSpraying)
                 {
                     isSpraying = true;
+                    Debug.Log("Spraying!");
+                    
                     if (fireSuppressant != null && !fireSuppressant.isPlaying)
-                    {
                         fireSuppressant.Play();
-                    }
+
                     if (sprayAudio != null && !sprayAudio.isPlaying)
-                    {
-                        sprayAudio.Play();
-                    }
+                        sprayAudio.Play();  // Start playing the spray sound
                 }
+
                 sprayTimer += Time.deltaTime;
             }
             else
             {
-                StopSpray();
+                StopSpraying();
             }
         }
         else
         {
-            StopSpray();
+            StopSpraying();
         }
     }
 
-    private void StopSpray()
+    private void StopSpraying()
     {
-        if (fireSuppressant != null && fireSuppressant.isPlaying)
-        {
-            fireSuppressant.Stop();
-        }
-        if (sprayAudio != null && sprayAudio.isPlaying)
-        {
-            sprayAudio.Stop();
-        }
+        if (fireSuppressant != null) fireSuppressant.Stop();
+        if (sprayAudio != null && sprayAudio.isPlaying) sprayAudio.Stop();
         isSpraying = false;
     }
 
@@ -133,6 +109,7 @@ public class FireExtinguisher : MonoBehaviour
             {
                 Destroy(pinObject.gameObject);
                 isPinPulled = true;
+                Debug.Log("Pin Pulled!");
             }
         }
     }
@@ -140,20 +117,18 @@ public class FireExtinguisher : MonoBehaviour
     private void OnExtinguisherGrabbed(SelectEnterEventArgs args)
     {
         isHoldingExtinguisher = true;
+        Debug.Log("Extinguisher Grabbed!");
     }
 
     private void OnExtinguisherReleased(SelectExitEventArgs args)
     {
         isHoldingExtinguisher = false;
-        StopSpray();
+        Debug.Log("Extinguisher Released!");
     }
 
     private void OnPinGrabbed(SelectEnterEventArgs args)
     {
-        if (pinRigidbody != null)
-        {
-            pinRigidbody.isKinematic = false;
-        }
+        if (pinRigidbody != null) pinRigidbody.isKinematic = false;
         pinObject.transform.SetParent(null);
     }
 
@@ -165,6 +140,7 @@ public class FireExtinguisher : MonoBehaviour
         {
             Destroy(pinObject.gameObject);
             isPinPulled = true;
+            Debug.Log("Pin Successfully Pulled!");
         }
         else
         {
