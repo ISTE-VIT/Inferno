@@ -1,9 +1,224 @@
 fileFormatVersion: 2
-guid: ed9012802d384c048a2f9ba0cfe2e98a
+guid: 83a6fadfcf032e3409ea6bbe87e9d3f8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DOOR
+    second: {fileID: 2100000, guid: e1ab7dc861e5f194b9a01bd102310c6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 9590dbbe3711cee4f860f64b7801a69e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Marble
+    second: {fileID: 2100000, guid: ba967b681063e1e498b60d077ace6968, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 838665c1dd36fda4f857ddf21efa3a57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: f41e3401e3ae5b24cbde2afb51fe25ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: 264c5a4af9a2ef94e9944602dad2c4c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.010
+    second: {fileID: 2100000, guid: 5298614a5d483db478cfb903c2f15bc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PVC
+    second: {fileID: 2100000, guid: 0ed40a0782198ad4abbc7fdd5ab13c6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic
+    second: {fileID: 2100000, guid: 2d9fa2970de4fcb4796148def15d53c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: audi
+    second: {fileID: 2100000, guid: fdb1e4720ed82d244a2f9ec6afac786c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: audi.001
+    second: {fileID: 2100000, guid: c38ac0d1c910e4e4cb0341eb0c481812, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair
+    second: {fileID: 2100000, guid: d0aaf7762fa8f9a45bb4307a1ed878c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair leg
+    second: {fileID: 2100000, guid: e4c900e124244ae4ebd3d865f605ca78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor
+    second: {fileID: 2100000, guid: d94f62a00defb2c4e809bb681c3b7c76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grass
+    second: {fileID: 2100000, guid: 1dcff9dbe6646454cb02ea76e73df005, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grass2
+    second: {fileID: 2100000, guid: cf9794746eaaf674f9035ecdd754a4b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marble floor
+    second: {fileID: 2100000, guid: 9c91d55d74734c74083edbf1a1439f59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marble floor.004
+    second: {fileID: 2100000, guid: 053cf0a6e5f843a4cbfe39df344f98a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marble floor.005
+    second: {fileID: 2100000, guid: 62b6ffba04a88b447b0de6f160766b1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marble floor.007
+    second: {fileID: 2100000, guid: c8dca4154b2a0654ab52fac423720a80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: marble floor.008
+    second: {fileID: 2100000, guid: 4f679caccce6e7f41a2175945d3bb5f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall
+    second: {fileID: 2100000, guid: 389fd38f246652144ad3c71c9f65a046, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: walll
+    second: {fileID: 2100000, guid: aba4982d54419f74f979539a2df370a2, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grass002_1K-JPG_Color
+    second: {fileID: 2800000, guid: 0ba62dda7963ef944bd2b147369f8d60, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grass002_1K-JPG_NormalGL
+    second: {fileID: 2800000, guid: c42143f878755684f904f492a3e4e8e7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grass002_1K-JPG_Roughness
+    second: {fileID: 2800000, guid: 742c262fa0429944bbaacabc31baa3f4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Marble017_1K-JPG_NormalGL
+    second: {fileID: 2800000, guid: c6e529e11a666a14f9a923a0bb6e6eff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PaintedPlaster001_1K-JPG_NormalGL
+    second: {fileID: 2800000, guid: 528d83c8eb2d2de43b1aea5a6dc9e380, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PaintedPlaster001_1K-JPG_Roughness
+    second: {fileID: 2800000, guid: 60782b714207d4d45ba12e7c2516617c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tiles074_1K-JPG_Color
+    second: {fileID: 2800000, guid: 01a4647da412cd94ea2ce0883e0ecc85, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tiles075_1K-JPG_Color
+    second: {fileID: 2800000, guid: 7764858cc990fd346a550e1477ac9945, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tiles075_1K-JPG_Roughness
+    second: {fileID: 2800000, guid: 34c3d45980afe0c4db27c939a876e937, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood056_1K-JPG_Color
+    second: {fileID: 2800000, guid: 1dbc4b2278138394294067ee82dff8d1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood068_1K-JPG_Color
+    second: {fileID: 2800000, guid: cfcba7663b01e944a81ea875f4304748, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood090A_1K-JPG_Color
+    second: {fileID: 2800000, guid: 49b91fb3d3f6b1145a8e9b6125bc945a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: concrete_wall_001_diff_1k
+    second: {fileID: 2800000, guid: 2e8493aa12da4c245aa3892be96045bd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: concrete_wall_001_nor_gl_1k
+    second: {fileID: 2800000, guid: 8051c28a5494fe040885b8dda0f27d19, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: concrete_wall_001_rough_1k
+    second: {fileID: 2800000, guid: 8793601a103ba404081afa6f6ad09d79, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: desktop-wallpaper-texture-textures-brown-wall-brick-thumbnail
+    second: {fileID: 2800000, guid: a5250f2d0c196054bab191ea3990393e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: patio_tiles_diff_1k
+    second: {fileID: 2800000, guid: 1c095f36de599ad459f9085208a3564c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: patio_tiles_nor_gl_1k
+    second: {fileID: 2800000, guid: 13bbf3ba447afb24eb79cf6ec975f60e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: patio_tiles_rough_1k
+    second: {fileID: 2800000, guid: 46347aea46d5dc24fbbad6f5021a47e3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: texture-grass-field
+    second: {fileID: 2800000, guid: 5d693e9a8983c78458569fb02b4f1eef, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

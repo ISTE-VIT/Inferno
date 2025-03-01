@@ -14,8 +14,13 @@ public class FireExtinguisher : MonoBehaviour
     public InputActionReference triggerAction;
     public float maxSprayDuration = 10f;
     
+    [Header("Fire Detection")]
+    public LayerMask fireLayer; // Layer for fire objects
+    public float sprayRadius = 2f; // Detection radius for fire extinction
+    private bool hasExtinguishedFire = false;
+    
     [Header("Audio")]
-    public AudioSource sprayAudio; // Add this in Unity and assign an extinguisher spray sound.
+    public AudioSource sprayAudio;
 
     [Header("Pin Mechanics")]
     public bool isPinPulled = false;
@@ -25,9 +30,13 @@ public class FireExtinguisher : MonoBehaviour
     private float sprayTimer = 0f;
     private bool isSpraying = false;
     private bool isHoldingExtinguisher = false;
+    private PerformanceTracker performanceTracker;
 
     private void Start()
     {
+        performanceTracker = FindObjectOfType<PerformanceTracker>();
+        if (performanceTracker == null) Debug.LogError("PerformanceTracker not found in scene!");
+
         if (fireSuppressant != null) fireSuppressant.Stop();
         else Debug.LogError("Particle system (fireSuppressant) is not assigned!");
 
@@ -58,6 +67,19 @@ public class FireExtinguisher : MonoBehaviour
     {
         HandleSpray();
         CheckPinPull();
+        CheckFireExtinguished();
+    }
+
+    private void CheckFireExtinguished()
+    {
+        if (isSpraying && !hasExtinguishedFire)
+        {
+            Collider[] hitColliders = Physics.OverlapSphere(
+                fireSuppressant.transform.position,
+                sprayRadius,
+                fireLayer
+            );
+        }
     }
 
     private void HandleSpray()
@@ -77,7 +99,7 @@ public class FireExtinguisher : MonoBehaviour
                         fireSuppressant.Play();
 
                     if (sprayAudio != null && !sprayAudio.isPlaying)
-                        sprayAudio.Play();  // Start playing the spray sound
+                        sprayAudio.Play();
                 }
 
                 sprayTimer += Time.deltaTime;
@@ -117,6 +139,7 @@ public class FireExtinguisher : MonoBehaviour
     private void OnExtinguisherGrabbed(SelectEnterEventArgs args)
     {
         isHoldingExtinguisher = true;
+        performanceTracker.OnExtinguisherFound(Time.time - performanceTracker.startTime);
         Debug.Log("Extinguisher Grabbed!");
     }
 

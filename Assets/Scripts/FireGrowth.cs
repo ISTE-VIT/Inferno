@@ -1,13 +1,17 @@
+using System;
 using UnityEngine;
 
 public class FireGrowth : MonoBehaviour
 {
     public float growthRate = 0.1f; // Rate at which fire grows
     public float shrinkRate = 0.2f; // Rate at which fire shrinks when extinguished
-    public float maxScale = 3f; // Maximum scale limit for fire
-    public float minScale = 0.1f; // Minimum scale before fire disappears
+    public float maxScale = 3f;     // Maximum scale limit for fire
+    public float minScale = 0.1f;   // Minimum scale before fire disappears
 
     public bool inExtinguisherZone = false;
+
+    // Declare an event to notify listeners when the fire is destroyed
+    public event Action OnFireDestroyed;
 
     void Update()
     {
@@ -47,5 +51,11 @@ public class FireGrowth : MonoBehaviour
         {
             inExtinguisherZone = false;
         }
+    }
+
+    // When the fire gameObject is destroyed, invoke the event.
+    private void OnDestroy()
+    {
+        OnFireDestroyed?.Invoke();
     }
 }
