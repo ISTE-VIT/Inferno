@@ -269,15 +269,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8470d4fc9bbf3594189a7183224d5598, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.454
+      value: -20.594
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8470d4fc9bbf3594189a7183224d5598, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.247
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8470d4fc9bbf3594189a7183224d5598, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.64
+      value: -0.762
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8470d4fc9bbf3594189a7183224d5598, type: 3}
       propertyPath: m_LocalRotation.w
@@ -289,7 +289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8470d4fc9bbf3594189a7183224d5598, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8470d4fc9bbf3594189a7183224d5598, type: 3}
       propertyPath: m_LocalRotation.z
@@ -655,6 +655,10 @@ MonoBehaviour:
   fireSuppressant: {fileID: 3705081567745073742}
   triggerAction: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   maxSprayDuration: 1000
+  fireLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  sprayRadius: 2
   sprayAudio: {fileID: 8303006730616359464}
   isPinPulled: 0
   pinPullThreshold: 0.1
