@@ -151,6 +151,54 @@ Transform:
   - {fileID: 1611009963}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &376633915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 376633917}
+  - component: {fileID: 376633916}
+  m_Layer: 0
+  m_Name: Performance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &376633916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376633915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c128cfac3c6ea05498929bcb94f8518d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backendURL: https://15fa-128-185-112-59.ngrok-free.app/api/performance
+  difficulty: Easy
+  startTime: 0
+  fireGrowth: {fileID: 1475211917}
+--- !u!4 &376633917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376633915}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23.51234, y: 2.6637688, z: -9.934356}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &571119553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -839,6 +887,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ba4ecd2cae4f124db1a1721ccb207ad, type: 3}
+--- !u!114 &1475211917 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6097627524244786804, guid: 4ba4ecd2cae4f124db1a1721ccb207ad, type: 3}
+  m_PrefabInstance: {fileID: 1475211916}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2289332dc062a2748abe4bd3840f7627, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1611009962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1141,3 +1200,4 @@ SceneRoots:
   - {fileID: 1353125746}
   - {fileID: 1832639563}
   - {fileID: 147417322}
+  - {fileID: 376633917}
