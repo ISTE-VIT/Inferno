@@ -2,12 +2,17 @@
 
 INFERNO is a VR application designed to educate students and faculty about fire safety protocols by simulating panic situations with a scriptable environment featuring real-time audio-visual and haptic feedback. The application was developed using Unity and C#, with 3D models created in Blender.
 
+
+## Video
+https://github.com/user-attachments/assets/d9f81a41-56d7-4485-b7ba-869479182a2f
+
+
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots and Videos](#screenshots-and-videos)
+- [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -50,11 +55,7 @@ We also showcased how this project aligns with the UN's SDG goals and demonstrat
 4. Use the fire extinguishers and follow the evacuation paths to the nearest exits.
 5. Review your performance score and feedback.
 
-## Screenshots and Videos
-### Video
-https://github.com/user-attachments/assets/d9f81a41-56d7-4485-b7ba-869479182a2f
-
-### Screenshots
+## Screenshots
 
 <div style="display: flex; justify-content: center; gap: 10px;">
   <img src="https://github.com/user-attachments/assets/92583bf8-2d62-40d5-b856-904a2667524f" width="49.5%" />
@@ -64,8 +65,7 @@ https://github.com/user-attachments/assets/d9f81a41-56d7-4485-b7ba-869479182a2f
 <img src="https://github.com/user-attachments/assets/75e34a18-6b35-49af-9a7c-3d9aceb27129" width="90.5%" />
 
 ## Contributing
-
-We welcome contributions from the community. Fork the repo, and create a new branch for contributions.
+We encourage and appreciate community contributions. To contribute, please fork the repository and create a new branch for your changes.
 
 ## License
 
