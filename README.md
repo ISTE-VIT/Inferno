@@ -61,7 +61,7 @@ https://github.com/user-attachments/assets/d9f81a41-56d7-4485-b7ba-869479182a2f
   <img src="https://github.com/user-attachments/assets/53cfa656-f075-4af9-906b-0ac188d4241f" width="40.6%" />
 </div>
 
-<img src="https://github.com/user-attachments/assets/75e34a18-6b35-49af-9a7c-3d9aceb27129" width="85%" />
+<img src="https://github.com/user-attachments/assets/75e34a18-6b35-49af-9a7c-3d9aceb27129" width="90.5%" />
 
 ## Contributing
 
