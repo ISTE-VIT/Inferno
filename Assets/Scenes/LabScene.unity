@@ -5985,7 +5985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c128cfac3c6ea05498929bcb94f8518d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backendURL: https://466b-128-185-112-57.ngrok-free.app/api/performance/
+  backendURL: https://inferno-fastapi.onrender.com/api/performance
   difficulty: Easy
   startTime: 0
   fireGrowth: {fileID: 365865853}
@@ -8014,8 +8014,8 @@ Transform:
   m_GameObject: {fileID: 1144412995}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2381, y: 0.6096, z: 4.98}
-  m_LocalScale: {x: 6.2423196, y: 2.919162, z: 1}
+  m_LocalPosition: {x: -1.3682, y: 0.6096, z: 4.98}
+  m_LocalScale: {x: 6.5026245, y: 2.919162, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -9073,8 +9073,8 @@ Transform:
   m_GameObject: {fileID: 1353125742}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.128698, y: 1.1198347, z: 5.75809}
-  m_LocalScale: {x: 6.7640905, y: 2.5476265, z: 1}
+  m_LocalPosition: {x: -9.128698, y: 1.3744, z: 5.75809}
+  m_LocalScale: {x: 6.7640905, y: 3.0568972, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2036486871}
@@ -13999,7 +13999,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2036486871}
   m_Layer: 0
-  m_Name: Exits
+  m_Name: Exits-Triggers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
