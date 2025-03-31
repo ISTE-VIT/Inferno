@@ -58,11 +58,12 @@ We also showcased how this project aligns with the UN's SDG goals and demonstrat
 ## Screenshots
 
 <div style="display: flex; justify-content: center; gap: 10px;">
-  <img src="https://github.com/user-attachments/assets/92583bf8-2d62-40d5-b856-904a2667524f" width="49.5%" />
-  <img src="https://github.com/user-attachments/assets/53cfa656-f075-4af9-906b-0ac188d4241f" width="40.6%" />
+  <img src="https://github.com/user-attachments/assets/92583bf8-2d62-40d5-b856-904a2667524f" width="45.2%" />
+  <img src="https://github.com/user-attachments/assets/3826280a-87b9-469a-8612-30a4bb960870" width="44.6%" />
+
 </div>
 
-<img src="https://github.com/user-attachments/assets/75e34a18-6b35-49af-9a7c-3d9aceb27129" width="90.5%" />
+<img src="https://github.com/user-attachments/assets/f25f1a22-bc5c-426c-85e8-c79ac4a012ac" width="90.2%" />
 
 ## Contributing
 We encourage and appreciate community contributions. To contribute, please fork the repository and create a new branch for your changes.
