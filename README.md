@@ -42,7 +42,7 @@ We also showcased how this project aligns with the UN's SDG goals and demonstrat
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/Ashwani1330/Inferno.git
+    git clone https://github.com/ISTE-VIT/Inferno.git
     ```
 2. Open the project in Unity.
 3. Ensure you have the necessary dependencies and packages installed.
