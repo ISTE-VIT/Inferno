@@ -68,6 +68,19 @@ We also showcased how this project aligns with the UN's SDG goals and demonstrat
 ## Contributing
 We encourage and appreciate community contributions. To contribute, please fork the repository and create a new branch for your changes.
 
+### Contributors
+
+- [Ashwani Kumar Moudgil](https://github.com/Ashwani1330)
+- [Raghav Sharma](https://github.com/rs0125)
+- [Rajan Hasija](https://github.com/rajan0810)
+- [Bhargav R](https://github.com/Bhargs24)
+
+---
+
+<h4 align="center">Made with ❤️ by ISTE VIT </h4>
+
+
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/Ashwani1330/Inferno/blob/main/LICENSE) file for details.
