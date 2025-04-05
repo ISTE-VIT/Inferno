@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using System;
 
 public class PerformanceTracker : MonoBehaviour
@@ -65,6 +66,14 @@ public class PerformanceTracker : MonoBehaviour
         OnExitReached(elapsedTime);
         Debug.Log("Exit reached!");
         SendDataToBackend();
+
+        StartCoroutine(ReturnToMainMenuAfterDelay(2f));
+    }
+
+    private IEnumerator ReturnToMainMenuAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene("MainMenu");
     }
 
     private void TriggerAlarm()
